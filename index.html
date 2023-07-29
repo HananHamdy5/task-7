@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="calc"> 
+    <br><br><br>
+        <div id="box">
+             <ul>
+                <li id="x">a= </li>
+                <li id="y"> b= </li>
+               
+            </ul> 
+             <p id="result">=</p>  
+        </div>
+
+        <div id="keywords">
+            <button id="n1"><h5>First Number</h5></button>
+            
+            <button id="minus"><h5>-</h5></button>
+           
+            <button id="n2"><h5>Second Number</h5></button>
+            <button id="multi"><h5>*</h5></button>
+
+            <button id="ceil"><h5>ceil(a)</h5></button>
+            <button id="floor"><h5>floor(a)</h5></button>
+            <button id="division"><h5>/</h5></button>
+
+            <button id="sin"><h5>SIN (a)</h5></button>
+            <button id="cos"><h5>COS (a)</h5></button>
+            <button id="log"><h5>LOG (a)</h5></button>
+            <button id="plus"><h5>+</h5></button>
+            <button id="area"><h5>Area of circle</h5></button><br>
+            <button id="circumferance"><h5>circumferance of circle</h5></button><br>
+
+        </div>
+
+    </div>
+            <br>
+        <script>
+            alert("here, you can calculate anything")
+                var a=0;
+                var b =0;
+                n1.addEventListener("click",function(){
+                a= parseFloat(prompt("Enter first number"));
+                x.textContent += a;
+                    });
+               n2.addEventListener("click",function(){
+                b= Number(prompt("Enter second number"));
+                y.textContent +=b;
+                    });
+                plus.addEventListener("click",function(){
+                
+                    result.textContent += (a+b) ;
+                    });
+
+                minus.addEventListener("click",function(){
+                
+                result.textContent += (a-b) ;
+                });
+                multi.addEventListener("click",function(){
+                
+                result.textContent += (a*b) ;
+                });
+                division.addEventListener("click",function(){
+                
+                result.textContent += (a/b) ;
+                });
+                ceil.addEventListener("click",function(){
+                
+                result.textContent += Math.ceil(a) ;
+                });    
+                floor.addEventListener("click",function(){
+                
+                result.textContent += Math.floor(a) ;
+                });  
+                sin.addEventListener("click",function(){
+                
+                result.textContent += Math.sin(a* Math.PI/180) ;
+                });
+                cos.addEventListener("click",function(){
+                
+                result.textContent += Math.cos(a* Math.PI/180) ;
+                });
+                log.addEventListener("click",function(){
+                
+                result.textContent += Math.log(a) ;
+                });
+                area.addEventListener("click",function(){
+                
+                result.textContent += Math.PI*a*a ;
+                });
+                circumferance.addEventListener("click",function(){
+                
+                result.textContent += Math.PI*a*2 ;
+                });
+
+
+
+        </script>
+                
+</body>
+</html>
